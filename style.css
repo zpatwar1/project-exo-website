@@ -206,3 +206,49 @@ footer {
     }
 }
 
+
+/* COMBAT SECTION REFINEMENT */
+
+#combat {
+    max-width: 1200px;
+}
+
+#combat .battle-showcase {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#combat .panel {
+    width: 100%;
+}
+
+.showcase-header,
+.showcase-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: #162128;
+}
+
+.showcase-header {
+    border-bottom: 1px solid var(--border);
+}
+
+.showcase-footer {
+    border-top: 1px solid var(--border);
+}
+
+@media (min-width: 800px) {
+    #combat .panel {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(50% - 18px);
+        min-height: 170px;
+    }
+
+    #combat .panel:last-child {
+        margin-left: 30px;
+    }
+}
+
