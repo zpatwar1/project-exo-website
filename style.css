@@ -335,3 +335,33 @@ footer {
     }
 }
 
+
+/* HERO TRANSMISSION EFFECT */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 4px,
+        rgba(0, 0, 0, 0.12) 5px
+    );
+
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
