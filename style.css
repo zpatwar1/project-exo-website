@@ -157,3 +157,52 @@ footer {
         padding: 55px 6%;
     }
 }
+
+
+/* BATTLE SHOWCASE */
+
+.battle-showcase {
+    margin-top: 35px;
+    background: #10191f;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.showcase-header,
+.showcase-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--cyan);
+    background: #162128;
+}
+
+.showcase-header {
+    border-bottom: 1px solid var(--border);
+}
+
+.showcase-footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.battle-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+@media (max-width: 650px) {
+    .showcase-header,
+    .showcase-footer {
+        font-size: 9px;
+        letter-spacing: 1px;
+        padding: 10px;
+    }
+}
+
