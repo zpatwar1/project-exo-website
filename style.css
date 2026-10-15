@@ -57,14 +57,78 @@ nav a:hover {
 /* HERO */
 
 .hero {
-    min-height: 65vh;
+    min-height: 78vh;
     padding: 120px 8%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     border-bottom: 1px solid var(--border);
     background:
-        linear-gradient(135deg, #101a21, #0b1014 70%);
+        linear-gradient(
+            90deg,
+            rgba(6, 10, 14, 0.88) 0%,
+            rgba(6, 10, 14, 0.72) 35%,
+            rgba(6, 10, 14, 0.35) 65%,
+            rgba(6, 10, 14, 0.82) 100%
+        ),
+        url("images/hero-world.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.system-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--cyan);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(56px, 9vw, 120px);
+    line-height: 0.95;
+    margin: 0 0 18px 0;
+    letter-spacing: 6px;
+}
+
+.hero h2 {
+    margin: 0 0 28px 0;
+    font-weight: 500;
+    color: var(--orange);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.hero p {
+    max-width: 640px;
+    color: #c0c8cc;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.hero-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-data span {
+    display: inline-block;
+    padding: 10px 14px;
+    background: rgba(17, 26, 33, 0.72);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .system-label {
@@ -150,7 +214,26 @@ footer {
     }
 
     .hero {
-        padding: 80px 6%;
+        min-height: 70vh;
+        padding: 90px 6%;
+        background-position: center top;
+    }
+
+    .hero h1 {
+        letter-spacing: 3px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-data {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     section {
