@@ -1,0 +1,159 @@
+
+/* PROJECT EXO WEBSITE */
+
+:root {
+    --background: #0b1014;
+    --panel: #19242c;
+    --text: #d5d9d6;
+    --muted: #89979d;
+    --orange: #de7842;
+    --cyan: #69bdd0;
+    --border: #344650;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    padding: 20px 8%;
+    border-bottom: 1px solid var(--border);
+    background: #10191f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--text);
+    font-size: 20px;
+}
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--cyan);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 65vh;
+    padding: 120px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+    background:
+        linear-gradient(135deg, #101a21, #0b1014 70%);
+}
+
+.system-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--cyan);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 9vw, 110px);
+    line-height: 1;
+    margin: 20px 0;
+    letter-spacing: 6px;
+}
+
+.hero h2 {
+    font-weight: 400;
+    color: var(--orange);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+/* CONTENT */
+
+section {
+    padding: 80px 8%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+section h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-left: 4px solid var(--orange);
+    padding-left: 20px;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.panel h3 {
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.panel p {
+    color: var(--muted);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 8%;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero {
+        padding: 80px 6%;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+}
